@@ -81,5 +81,9 @@ margin:0px;
 .second{
     background-color: antiquewhite;
     text-align: center;
-    height:50%;
+    height:47%;
+    margin-top:65px;
+    font-family: 'Crete Round', serif;
+    text-shadow: 0px 1px 1px rgb(73, 9, 9),
+    0.5px -1px 0px black;
 }

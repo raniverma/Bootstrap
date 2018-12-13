@@ -24,7 +24,7 @@
     <!--nevigation Bar-->
     <header id="main-header">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="https://github.com/raniverma">
                 <img src="image/github-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -50,12 +50,11 @@
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Contact Me
+                                Connect Me
                             </button>
                             <div class="dropdown-menu">
+                                <a class="dropdown-item active" href="https://www.linkedin.com">LinkedIn</a>
                                 <a class="dropdown-item active" href="https://www.facebook.com">Facebook</a>
-                                <a class="dropdown-item active" href="https://www.google.com">Google</a>
-                                <a class="dropdown-item active" href="https://www.twitter.com">Twitter</a>
                             </div>
                         </div>
                     </li>
@@ -86,6 +85,7 @@
 
     <!-- Second Section-->
     <div class="jumbotron jumbotron-fluid">
+        <h4>About Me</h4>
         <section class="second">
             <div class="container1">
                 <!--container shown in flex-->
@@ -102,33 +102,55 @@
     </div>
 
 
-    <!--Third Section-->
-    <div class="jumbotron jumbotron-fluid">
-        <section class="third">
-            <!--All project details-->
-            <div class="container3">
-                <h3>All my Projects</h3>
-                <div class="pj1">
-                    <p>Plaguarism Detection and Evaluation</p>
-                </div>
-                <div class="pj2">
-                    <p>Performance Management System</p>
-                </div>
-                <div class="pj3">
-                    <p>Smart Bike Sharing System</p>
-                </div>
-                <div class="pj4">
-                    <p>Restaurant Management System</p>
-                </div>
-                <div class="pj5">
-                    <p>Learning Engagement and Management</p>
+    <section class="third">
+        <h4>My Projects</h4>
+        <div class="flexbox">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Project-1</div>
+                <div class="card-body">
+                    <h5 class="card-title">Plaguarism Detection and Evaluation</h5>
+                    <p class="card-text">The Project developed an interactive user interface
+                        to take c code as and input and give the percentage Plaguarism in that code
+                        by using control flow diagram.
+                    </p>
                 </div>
             </div>
-        </section>
-    </div>
-    
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Project-2</div>
+                <div class="card-body">
+                    <h5 class="card-title">Performance Management System</h5>
+                    <p class="card-text">The project developed a web application which is used to calculate
+                        the performance of employees on the basis of KRA's and KCA's.
+                    </p>
+                </div>
+            </div>
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Project-3</div>
+                <div class="card-body">
+                    <h5 class="card-title">Smart Bike Sharing System</h5>
+                    <p class="card-text">The project developed an android application for booking the bikes
+                        online in smart cities and providing almost all necessary information about the journey of
+                        the rider.
+                    </p>
+                </div>
+            </div>
+            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header">Project-4</div>
+                <div class="card-body">
+                    <h5 class="card-title">Restaurant Management System</h5>
+                    <p class="card-text">The project developed an android application by which any person
+                        can see the menu of a restaurant and order the food easily.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
     <div class="jumbotron jumbotron-fluid">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <h4>My Work Experience</h4>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-targ et="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -173,7 +195,45 @@
             </a>
         </div>
     </div>
-    
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <!-- <section class="modal">-->
+        <h5>Send Me a Message</h5>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+            Message Me</button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" w-100 text-center id="exampleModalLabel">New message</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--</section>-->
+    </div>
 
 
     <div class="footer-head">
@@ -193,9 +253,6 @@
                     <li class="footer-list-item"><a href="https://www.google.com/" class="footer-child"><i class="fab fa-google"></i></a></li>
                 </ul>
             </div>
-            <!-- <div class="copyright">
-                &#0169; 2018. ALL RIGHTS RESERVED
-            </div>-->
         </div>
     </footer>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>

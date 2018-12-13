@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--Custom css-->
     <link rel="stylesheet" href="css/style.css">
-    <!--bootstrap js-->
-    <script src="js/bootstrap.min.js"></script>
+    <!--bootstrap js
+    <script src="js/bootstrap.min.js"></script>-->
     <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
     <!-- Linking to font awesome. -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
@@ -23,9 +23,8 @@
 
 <body>
     <!--nevigation Bar-->
-    <!-- <section class="first">-->
     <header id="main-header">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="nav-main">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
                 <img src="image/github-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
             </a>
@@ -35,29 +34,45 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="nav nav-tabs">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="html/about.html">About Me </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="html/projects.html">Projects</a>
                     </li>
-                    <li class="nav-item">
+                    <!--<li class="nav-item active">
                         <a class="nav-link" href="html/contact.html">Contact Me</a>
+                    </li>-->
+                    <li class="nav-item dropdown active">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.facebook.com">Facebook</a>
+                                <a class="dropdown-item active" href="https://www.google.com">Google</a>
+                                <a class="dropdown-item" href="https://www.twitter.com">Twitter</a>
+                            </div>
+                        </div>
                     </li>
+
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
+
+                <!--<form class="form-inline my-3 my-lg-1">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                </form>-->
             </div>
         </nav>
 
     </header>
 
+    <!--First Section-->
     <section id="cover">
         <div id="cover-caption">
             <div class="container">
@@ -70,6 +85,84 @@
             </div>
         </div>
     </section>
+
+    <!-- Second Section-->
+    <div class="jumbotron jumbotron-fluid">
+        <section class="second">
+            <div class="container1">
+                <!--container shown in flex-->
+                <div class="about">
+                    <p>Hello.... <br> This is Pratima Verma.<br>
+                        Software Developer<br>Mail Id- <a href="https://mail.google.com">prati101096@gmail.com</a><br><br>
+                        Currently I am working in Boeing India Private Limited,Banglore.<br>
+                        My technical interests are Java and Web Development.Apart from my technical <br>
+                        interests, I love to spent my free time with nature.<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--Third Section-->
+    <!--<section class="carousel">
+        <div id="carousel-home" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-home" data-slide-to="1"></li>
+                <li data-target="#carousel-home" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="image/FlexiEle.jpg"  alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/mahindra-comviva.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img  src="image/boeing.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>-->
+
+
+    <!--Third Section-->
+    <div class="jumbotron jumbotron-fluid">
+        <section class="third">
+            <!--All project details-->
+            <div class="container3">
+                <h3>All my Projects</h3>
+                <div class="pj1">
+                    <p>Plaguarism Detection and Evaluation</p>
+                </div>
+                <div class="pj2">
+                    <p>Performance Management System</p>
+                </div>
+                <div class="pj3">
+                    <p>Smart Bike Sharing System</p>
+                </div>
+                <div class="pj4">
+                    <p>Restaurant Management System</p>
+                </div>
+                <div class="pj5">
+                    <p>Learning Engagement and Management</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
     <div class="footer-head">
         <p>Follow Me</p>
     </div>
@@ -88,24 +181,10 @@
                 </ul>
             </div>
             <!-- <div class="copyright">
-            &#0169; 2018. ALL RIGHTS RESERVED
-        </div>-->
+                &#0169; 2018. ALL RIGHTS RESERVED
+            </div>-->
         </div>
     </footer>
-    <!--</section>-->
-    <section class="second">
-        <div class="container1">
-            <!--container shown in flex-->
-            <div class="about">
-                <p>Hello.... <br> This is Pratima Verma.<br>
-                    Software Developer<br>Mail Id- <a href="https://mail.google.com">prati101096@gmail.com</a><br><br>
-                    Currently I am working in Boeing India Private Limited,Banglore.<br>
-                    My technical interests are Java and Web Development.Apart from my technical <br>
-                    interests, I love to spent my free time with nature.<br>
-                </p>
-            </div>
-        </div>
-    </section>
 
 </body>
 
